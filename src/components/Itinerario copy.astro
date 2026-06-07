@@ -57,14 +57,62 @@
                                 >
                                     Ceremonia Religiosa
                                 </h3>
-                                <p class="font-crimson text-lg text-[#122a4d]">
-                                    16:00 hrs.
+                                <p
+                                    class="font-crimson text-lg text-[#122a4d]"
+                                >
+                                    16:00 Hrs.
                                 </p>
                             </div>
                         </div>
 
-                        <!-- EVENTO 2: CENA -->
+                        <!-- EVENTO 2: CEREMONIA CIVIL Y RECEPCIÓN -->
                         <div class="flex items-start gap-4 mb-5" id="evento-2">
+                            <div class="w-12 flex-shrink-0 mt-1">
+                                <img
+                                    src="/imagenes/recepcion.png"
+                                    alt="Ceremonia Civil y Recepción"
+                                    class="w-full h-auto object-contain icono-itinerario"
+                                />
+                            </div>
+                            <div class="flex-1 text-center">
+                                <h3
+                                    class="font-great-vibes text-[1.75rem] text-[#122a4d] leading-none mb-1"
+                                >
+                                    Ceremonia Civil y Recepción
+                                </h3>
+                                <p
+                                    class="font-crimson text-lg text-[#122a4d]"
+                                >
+                                    17:00 Hrs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- EVENTO 3: BRINDIS -->
+                        <div class="flex items-start gap-4 mb-5" id="evento-3">
+                            <div class="w-12 flex-shrink-0 mt-1">
+                                <img
+                                    src="/imagenes/brindis.png"
+                                    alt="Brindis"
+                                    class="w-full h-auto object-contain icono-itinerario"
+                                />
+                            </div>
+                            <div class="flex-1 text-center">
+                                <h3
+                                    class="font-great-vibes text-[1.75rem] text-[#122a4d] leading-none mb-1"
+                                >
+                                    Brindis
+                                </h3>
+                                <p
+                                    class="font-crimson text-lg text-[#122a4d]"
+                                >
+                                    17:30 Hrs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- EVENTO 4: CENA -->
+                        <div class="flex items-start gap-4 mb-5" id="evento-4">
                             <div class="w-12 flex-shrink-0 mt-1">
                                 <img
                                     src="/imagenes/cena.png"
@@ -78,14 +126,16 @@
                                 >
                                     Cena
                                 </h3>
-                                <p class="font-crimson text-lg text-[#122a4d]">
-                                    19:30 hrs.
+                                <p
+                                    class="font-crimson text-lg text-[#122a4d]"
+                                >
+                                    19:30 Hrs.
                                 </p>
                             </div>
                         </div>
 
-                        <!-- EVENTO 3: FIESTA Y BAILE -->
-                        <div class="flex items-start gap-4" id="evento-3">
+                        <!-- EVENTO 5: FIESTA Y BAILE -->
+                        <div class="flex items-start gap-4" id="evento-5">
                             <div class="w-12 flex-shrink-0 mt-1">
                                 <img
                                     src="/imagenes/musica.png"
@@ -99,8 +149,10 @@
                                 >
                                     Fiesta y Baile
                                 </h3>
-                                <p class="font-crimson text-lg text-[#122a4d]">
-                                    20:30 hrs.
+                                <p
+                                    class="font-crimson text-lg text-[#122a4d]"
+                                >
+                                    20:30 Hrs.
                                 </p>
                             </div>
                         </div>
@@ -197,7 +249,13 @@
             );
 
             // Animación de cada evento
-            const eventos = ["#evento-1", "#evento-2", "#evento-3"];
+            const eventos = [
+                "#evento-1",
+                "#evento-2",
+                "#evento-3",
+                "#evento-4",
+                "#evento-5",
+            ];
 
             eventos.forEach((evento, index) => {
                 gsap.fromTo(
